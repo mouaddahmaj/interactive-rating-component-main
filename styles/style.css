@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(216, 12%, 8%);
+}
+body .container {
+  color: hsl(0, 0%, 100%);
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(210, 12%, 13%));
+}
+body .container .part1 {
+  display: none;
+}
+body .container > div {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .container > div .img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsl(210, 11%, 22%);
+}
+body .container > div > p {
+  margin-top: -20px;
+  color: hsl(217, 12%, 63%);
+}
+body .container > div .number {
+  display: flex;
+  justify-content: space-between;
+}
+body .container > div .number > div {
+  cursor: pointer;
+  text-decoration: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* &:active{
+  } */
+}
+body .container > div .number > div:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+body .container #btn {
+  height: 40px;
+  border-radius: 20px;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-weight: bold;
+  cursor: pointer;
+}
+body .container #btn:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+body .container > div:last-child {
+  text-align: center;
+  height: 80%;
+}
+body .container > div:last-child p:last-child {
+  margin-top: -20px;
+}
+body .container > div:last-child div + p {
+  color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  background-color: hsl(213, 19%, 18%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 6px 20px;
+}
+body .container .part2 {
+  display: none;
+}
+
+.desactive {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+}
+
+.active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+.attribution a {
+  color: orange;
+}/*# sourceMappingURL=style.css.map */

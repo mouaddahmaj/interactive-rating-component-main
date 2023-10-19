@@ -1,0 +1,142 @@
+@import url(https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap);
+$Orange: hsl(25, 97%, 53%);
+
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $VeryDarkBlue;
+    .container{
+        .part1{
+            display: none;
+        }
+        color: $White;
+        width: 350px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background:linear-gradient(to bottom,$DarkBlue,hsl(210, 12%, 13%)) ;
+       
+        >div{
+            
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .img{
+                width:50px; 
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color:hsl(210, 11%, 22%) ;
+            }
+            >p{
+                margin-top: -20px;
+                color: $LightGrey;
+
+            }
+            
+            
+            .number{
+                display: flex;
+                justify-content: space-between;
+                >div{
+                
+
+                    cursor: pointer;
+                    text-decoration: none;
+                    
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                        
+
+                    
+                    &:hover{
+                        background-color:$Orange ;
+                        color: $White;
+                    }
+                    
+                    /* &:active{
+                    } */
+                }
+                
+                    
+                    
+                    
+                }
+                
+            }
+       
+            #btn{
+                height: 40px;
+                border-radius:20px ;
+                background-color: $Orange;
+                border: none;
+                color:$White;
+                font-weight: bold;
+                cursor: pointer;
+                &:hover{
+                    background-color: $White;
+                    color: $Orange;
+                }
+            }
+            >div:last-child{
+                text-align: center;
+                height: 80%;
+                
+                p:last-child{
+                    margin-top: -20px;
+                    
+                }
+                div+p{
+                    color:$Orange;
+                    border-radius: 20px;
+                    background-color:$DarkBlue ;
+                    width: fit-content;
+                    margin:0 auto;
+                    padding: 6px 20px;
+                }
+            }
+            .part2{
+                
+                display: none;
+                
+            }
+        }
+    }
+.desactive{
+    background-color: $DarkBlue;
+    color: $LightGrey;
+}
+.active{
+    background-color: $LightGrey;
+    color: $White;
+  
+}
+
+.attribution { font-size: 11px; text-align: center;color: white; }
+.attribution a { color: orange; }
